@@ -8,10 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="studentmanagement.util" />
         <module name="studentmanagement.ui" />
+        <module name="studentmanagement.pdf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="studentmanagement.db" target="23" />
+      <module name="studentmanagement.database" target="23" />
     </bytecodeTargetLevel>
   </component>
 </project>

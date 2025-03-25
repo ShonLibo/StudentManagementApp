@@ -7,12 +7,10 @@
         <option value="$PROJECT_DIR$/studentmanagement.util/pom.xml" />
         <option value="$PROJECT_DIR$/studentmanagement.db/pom.xml" />
         <option value="$PROJECT_DIR$/StudentManagementApp/studentmanagement.pdf/pom.xml" />
+        <option value="$PROJECT_DIR$/StudentManagementApp/StudentManagementApp/studentmanagement.database/pom.xml" />
+        <option value="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" />
+        <option value="$PROJECT_DIR$/studentmanagement.ui/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/studentmanagement.db/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">
