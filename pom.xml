@@ -10,7 +10,6 @@
 
     <modules>
         <module>studentmanagement.util</module>
-        <module>studentmanagement.db</module>
         <module>studentmanagement.pdf</module>
         <module>studentmanagement.ui</module>
     </modules>
