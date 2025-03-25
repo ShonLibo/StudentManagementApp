@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21b379c4-1b9f-498b-b46d-a63b04a64392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/studentmanagement.db/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentmanagement.db/src/main/java/com/studentmanagement/db/DatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentmanagement.db/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="21b379c4-1b9f-498b-b46d-a63b04a64392" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
