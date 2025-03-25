@@ -12,7 +12,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="studentmanagement.db" target="23" />
-      <module name="StudentManagementApp" target="23" />
     </bytecodeTargetLevel>
   </component>
 </project>
