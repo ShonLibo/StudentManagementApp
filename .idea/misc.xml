@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/studentmanagement.util/pom.xml" />
+        <option value="$PROJECT_DIR$/studentmanagement.db/pom.xml" />
+        <option value="$PROJECT_DIR$/StudentManagementApp/studentmanagement.pdf/pom.xml" />
       </list>
     </option>
   </component>
