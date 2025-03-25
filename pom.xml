@@ -12,6 +12,7 @@
         <module>studentmanagement.util</module>
         <module>studentmanagement.pdf</module>
         <module>studentmanagement.ui</module>
+        <module>studentmanagement.db</module>
     </modules>
 
     <properties>
