@@ -1,7 +1,7 @@
 module studentmanagement.db {
-    requires java.sql; // For JDBC
-    requires studentmanagement.util; // For Constants
-    requires java.desktop; // For JOptionPane
+    requires java.sql;
+    requires transitive studentmanagement.util;
+    requires java.desktop;
 
-    exports com.studentmanagement.db;
+    exports studentmanagement.db;
 }

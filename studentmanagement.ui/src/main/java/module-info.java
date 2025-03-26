@@ -1,8 +1,8 @@
 module studentmanagement.ui {
-    requires java.desktop; // For Swing
-    requires com.jtattoo; // For JTattoo Look and Feel
-    requires studentmanagement.db; // For DatabaseManager
-    requires studentmanagement.pdf; // For PdfExporter
+    requires java.desktop;
+    requires transitive studentmanagement.db;
+    requires transitive studentmanagement.pdf;
+    requires transitive studentmanagement.util;
 
-    exports com.studentmanagement.ui;
+    exports studentmanagement.ui;
 }

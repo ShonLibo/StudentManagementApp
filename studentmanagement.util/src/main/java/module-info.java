@@ -1,3 +1,3 @@
 module studentmanagement.util {
-    exports com.studentmanagement.util;
+    exports studentmanagement.util;
 }

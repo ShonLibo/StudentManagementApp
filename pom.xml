@@ -1,69 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.studentmanagement</groupId>
-    <artifactId>studentmanagementapp</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>student-management-system</artifactId>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>studentmanagement.util</module>
+        <module>studentmanagement.db</module>
         <module>studentmanagement.pdf</module>
         <module>studentmanagement.ui</module>
-        <module>studentmanagement.db</module>
     </modules>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!-- MySQL Connector/J -->
             <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.33</version>
+                <groupId>com.studentmanagement</groupId>
+                <artifactId>studentmanagement.util</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.studentmanagement</groupId>
+                <artifactId>studentmanagement.db</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.studentmanagement</groupId>
+                <artifactId>studentmanagement.pdf</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.studentmanagement</groupId>
+                <artifactId>studentmanagement.ui</artifactId>
+                <version>1.0.0</version>
             </dependency>
 
-            <!-- iText 7 -->
-            <dependency>
-                <groupId>com.itextpdf</groupId>
-                <artifactId>itext7-core</artifactId>
-                <version>7.2.5</version>
-                <type>pom</type>
-            </dependency>
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>kernel</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
 
-            <!-- JTattoo -->
-            <dependency>
-                <groupId>com.jtattoo</groupId>
-                <artifactId>JTattoo</artifactId>
-                <version>1.6.13</version>
-            </dependency>
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>io</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
 
-            <!-- SLF4J Simple -->
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>2.0.13</version>
-            </dependency>
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>layout</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>forms</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>pdfa</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>sign</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>barcodes</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>font-asian</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.itextpdf</groupId>
+                    <artifactId>hyph</artifactId>
+                    <version>7.0.2</version>
+                </dependency>
+
+
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>11</source>
-                    <target>11</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

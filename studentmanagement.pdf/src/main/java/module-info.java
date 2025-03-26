@@ -1,8 +1,7 @@
 module studentmanagement.pdf {
-    requires itextpdf.kernel;
-    requires itextpdf.layout;
-    requires java.desktop; // For JTable, JOptionPane, JFileChooser
-    requires org.slf4j; // For SLF4J logging
+    requires java.desktop;
+    requires transitive studentmanagement.util;
+    requires layout;
 
-    exports com.studentmanagement.pdf;
+    exports studentmanagement.pdf;
 }
