@@ -11,8 +11,18 @@ import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.Table;
+import com.itextpdf.layout.property.TextAlignment;
+import com.itextpdf.layout.property.UnitValue;
 
 public class StudentManagementApp extends JFrame {
     private JTextField regNoField, nameField, courseField, gradeField, searchField;
@@ -91,7 +101,7 @@ public class StudentManagementApp extends JFrame {
         recordPanel.setBackground(new Color(34, 45, 50));
         recordPanel.setLayout(null);
 
-        JLabel recordTitleLabel = new JLabel("Student Record");
+        JLabel recordTitleLabel = new JLabel("Student Records");
         recordTitleLabel.setForeground(Color.WHITE);
         recordTitleLabel.setFont(new Font("Arial", Font.BOLD, 20));
         recordTitleLabel.setBounds(220, 20, 200, 30);
@@ -108,7 +118,7 @@ public class StudentManagementApp extends JFrame {
         recordPanel.add(searchField);
 
         // Table setup
-        tableModel = new DefaultTableModel(Constants.TABLE_COLUMNS, 0);
+        tableModel = new DefaultTableModel(new String[]{"RegNo", "Name", "Course", "Grade"}, 0);
         studentTable = new JTable(tableModel);
         rowSorter = new TableRowSorter<>(tableModel);
         studentTable.setRowSorter(rowSorter);
@@ -148,23 +158,109 @@ public class StudentManagementApp extends JFrame {
 
     private void setupButtonActions(CardLayout cardLayout, JPanel mainPanel) {
         saveButton.addActionListener(e -> {
-            dbManager.saveStudent(
-                    regNoField.getText(),
-                    nameField.getText(),
-                    courseField.getText(),
-                    gradeField.getText(),
-                    StudentManagementApp.this
-            );
+            String regNo = regNoField.getText();
+            String name = nameField.getText();
+            String course = courseField.getText();
+            String grade = gradeField.getText();
+
+            if (regNo.isEmpty() || name.isEmpty() || course.isEmpty() || grade.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Please fill in all fields", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            dbManager.saveStudent(regNo, name, course, grade, StudentManagementApp.this);
             clearFields();
         });
 
         viewButton.addActionListener(e -> cardLayout.show(mainPanel, "Record"));
-        loadDataButton.addActionListener(e -> dbManager.loadData(tableModel, StudentManagementApp.this));
+
+        loadDataButton.addActionListener(e -> {
+            tableModel.setRowCount(0); // Clear existing data
+            dbManager.loadData(tableModel, StudentManagementApp.this);
+        });
+
         addNewRecordButton.addActionListener(e -> {
             cardLayout.show(mainPanel, "Register");
             clearFields();
         });
-        exportButton.addActionListener(e -> pdfExporter.exportToPDF(studentTable, StudentManagementApp.this));
+
+        exportButton.addActionListener(e -> {
+            if (studentTable.getRowCount() == 0) {
+                JOptionPane.showMessageDialog(this, "No data to export!", "Warning", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setDialogTitle("Save PDF File");
+            String userHome = System.getProperty("user.home");
+            fileChooser.setCurrentDirectory(new File(userHome + "/Documents"));
+            fileChooser.setSelectedFile(new File("StudentRecord.pdf"));
+
+            if (fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
+                File selectedFile = fileChooser.getSelectedFile();
+                String filePath = selectedFile.getAbsolutePath();
+
+                if (!filePath.toLowerCase().endsWith(".pdf")) {
+                    filePath += ".pdf";
+                    selectedFile = new File(filePath);
+                }
+
+                try {
+                    File parentDir = selectedFile.getParentFile();
+                    if (!parentDir.exists()) {
+                        boolean created = parentDir.mkdirs();
+                        if (!created) {
+                            throw new IOException("Failed to create directory: " + parentDir.getAbsolutePath());
+                        }
+                    }
+                    if (!parentDir.canWrite()) {
+                        throw new IOException("No write permission for directory: " + parentDir.getAbsolutePath());
+                    }
+
+                    if (selectedFile.exists() && !selectedFile.canWrite()) {
+                        throw new IOException("File exists but is not writable: " + selectedFile.getAbsolutePath());
+                    }
+
+                    PdfWriter writer = new PdfWriter(filePath);
+                    PdfDocument pdf = new PdfDocument(writer);
+                    Document document = new Document(pdf);
+
+                    Paragraph title = new Paragraph("Student Records Report")
+                            .setFontSize(20)
+                            .setBold()
+                            .setTextAlignment(TextAlignment.CENTER);
+                    document.add(title);
+
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+                    String currentDate = dateFormat.format(new Date());
+                    Paragraph timestamp = new Paragraph("Generated on: " + currentDate)
+                            .setTextAlignment(TextAlignment.CENTER);
+                    document.add(timestamp);
+
+                    document.add(new Paragraph("\n"));
+
+                    Table table = new Table(UnitValue.createPercentArray(new float[]{25, 25, 25, 25}));
+                    table.setWidth(UnitValue.createPercentValue(100));
+
+                    for (int i = 0; i < studentTable.getColumnCount(); i++) {
+                        table.addHeaderCell(studentTable.getColumnName(i)).setBold();
+                    }
+
+                    for (int row = 0; row < studentTable.getRowCount(); row++) {
+                        for (int col = 0; col < studentTable.getColumnCount(); col++) {
+                            table.addCell(studentTable.getValueAt(row, col).toString());
+                        }
+                    }
+
+                    document.add(table);
+                    document.close();
+                    JOptionPane.showMessageDialog(this, "PDF exported successfully to: " + filePath);
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(this, "Error exporting PDF: " + ex.getMessage() + "\nTry saving to a different location.", "Error", JOptionPane.ERROR_MESSAGE);
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(this, "Unexpected error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
     }
 
     private void setupSearchFilter() {

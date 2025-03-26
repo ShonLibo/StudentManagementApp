@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21b379c4-1b9f-498b-b46d-a63b04a64392" name="Changes" comment="" />
+    <list default="true" id="21b379c4-1b9f-498b-b46d-a63b04a64392" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/studentmanagement.database.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.db/src/main/java/studentmanagement/db/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/src/main/java/studentmanagement/db/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.db/target/classes/com/studentmanagement/db/DatabaseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.db/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/src/main/java/studentmanagement/pdf/PdfExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/src/main/java/studentmanagement/pdf/PdfExporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.util/src/main/java/studentmanagement/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/src/main/java/studentmanagement/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.util/target/classes/studentmanagement/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/target/classes/studentmanagement/util/Constants.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +66,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/iText7-Core-7.1.4.zip",
+    "last_opened_file_path": "C:/Users/SamsonNeyo/mysql-connector-java-8.0.18.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.17094016",
@@ -61,7 +78,7 @@
       <recent name="C:\Users\SamsonNeyo\Documents\GitHub\StudentManagementApp\StudentManagementApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StudentManagementApp">
+  <component name="RunManager" selected="Application.studentmanagement.ui.StudentManagementApp">
     <configuration name="StudentManagementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.studentmanagement.ui.StudentManagementApp" />
       <module name="studentmanagement.ui" />
@@ -103,8 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentManagementApp" />
         <item itemvalue="Application.studentmanagement.ui.StudentManagementApp" />
+        <item itemvalue="Application.StudentManagementApp" />
       </list>
     </recent_temporary>
   </component>

@@ -16,18 +16,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
-
     <dependencies>
-        <dependency>
-            <groupId>com.studentmanagement</groupId>
-            <artifactId>studentmanagement.db</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.studentmanagement</groupId>
-            <artifactId>studentmanagement.pdf</artifactId>
-            <version>1.0.0</version>
-        </dependency>
         <dependency>
             <groupId>com.studentmanagement</groupId>
             <artifactId>studentmanagement.util</artifactId>
@@ -37,6 +26,18 @@
             <groupId>com.jtattoo</groupId>
             <artifactId>JTattoo</artifactId>
             <version>1.6.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.studentmanagement</groupId>
+            <artifactId>studentmanagement.db</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.studentmanagement</groupId>
+            <artifactId>studentmanagement.pdf</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

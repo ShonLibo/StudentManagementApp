@@ -23,11 +23,19 @@
             <artifactId>studentmanagement.util</artifactId>
             <version>1.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version>
-        </dependency>
+            <!-- MySQL Connector -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.33</version>
+            </dependency>
+
+            <!-- Utility module -->
+            <dependency>
+                <groupId>com.studentmanagement</groupId>
+                <artifactId>studentmanagement.util</artifactId>
+                <version>1.0.0</version>
+            </dependency>
     </dependencies>
 
     <build>

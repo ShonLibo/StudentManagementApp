@@ -1,7 +1,7 @@
 module studentmanagement.pdf {
     requires java.desktop;
-    requires transitive studentmanagement.util;
+    requires studentmanagement.util;
+    requires kernel;
     requires layout;
-
     exports studentmanagement.pdf;
 }

@@ -20,7 +20,7 @@ public class DatabaseManager {
 
     private void createTableIfNotExists() throws SQLException {
         String sql = "CREATE TABLE IF NOT EXISTS students (" +
-                "reg_no VARCHAR(20) PRIMARY KEY, " +
+                "RegNo VARCHAR(20) PRIMARY KEY, " +
                 "name VARCHAR(100) NOT NULL, " +
                 "course VARCHAR(50) NOT NULL, " +
                 "grade VARCHAR(10) NOT NULL)";
@@ -36,7 +36,7 @@ public class DatabaseManager {
             return;
         }
 
-        String sql = "INSERT INTO students (reg_no, name, course, grade) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO students (RegNo, name, course, grade) VALUES (?, ?, ?, ?)";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setString(1, regNo);
             pstmt.setString(2, name);
@@ -59,7 +59,7 @@ public class DatabaseManager {
              ResultSet rs = stmt.executeQuery(sql)) {
 
             while (rs.next()) {
-                String regNo = rs.getString("reg_no");
+                String regNo = rs.getString("RegNo");
                 String name = rs.getString("name");
                 String course = rs.getString("course");
                 String grade = rs.getString("grade");
