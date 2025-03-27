@@ -25,10 +25,18 @@ import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
 
 public class StudentManagementApp extends JFrame {
-    private JTextField regNoField, nameField, courseField, gradeField, searchField;
+    JTextField regNoField;
+    JTextField nameField;
+    JTextField courseField;
+    JTextField gradeField;
+    JTextField searchField;
     private JTable studentTable;
-    private DefaultTableModel tableModel;
-    private JButton saveButton, viewButton, loadDataButton, exportButton, addNewRecordButton;
+    DefaultTableModel tableModel;
+    JButton saveButton;
+    private JButton viewButton;
+    private JButton loadDataButton;
+    JButton exportButton;
+    private JButton addNewRecordButton;
     private TableRowSorter<DefaultTableModel> rowSorter;
     private final DatabaseManager dbManager;
     private final PdfExporter pdfExporter;
@@ -271,7 +279,7 @@ public class StudentManagementApp extends JFrame {
         });
     }
 
-    private void filterTable() {
+    void filterTable() {
         String searchText = searchField.getText().trim();
         if (searchText.isEmpty()) {
             rowSorter.setRowFilter(null);

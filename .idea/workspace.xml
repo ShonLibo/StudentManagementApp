@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21b379c4-1b9f-498b-b46d-a63b04a64392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/studentmanagement.db/src/test/java/studentmanagement/db/DatabaseManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentmanagement.pdf/src/test/java/studentmanagement/pdf/PdfExporterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentmanagement.ui/src/test/java/studentmanagement/ui/StudentManagementAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentmanagement.util/src/test/java/studentmanagement/util/ConstantsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.db/target/classes/studentmanagement/db/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/target/classes/studentmanagement/db/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.util/src/main/java/studentmanagement/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/src/main/java/studentmanagement/util/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.util/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.util/target/classes/studentmanagement/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/target/classes/studentmanagement/util/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/target/classes/studentmanagement/ui/StudentManagementApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/target/classes/studentmanagement/ui/StudentManagementApp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/target/classes/studentmanagement/ui/StudentManagementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/target/classes/studentmanagement/ui/StudentManagementApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,10 @@
     "accountId": "480ba9e0-468e-41b9-b661-bf13704b994f"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/studentmanagement.pdf/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -58,7 +62,10 @@
   "keyToString": {
     "Application.StudentManagementApp.executor": "Run",
     "Application.studentmanagement.ui.StudentManagementApp.executor": "Run",
+    "JUnit.ConstantsTest.executor": "Run",
     "JUnit.DatabaseManagerTest.executor": "Run",
+    "JUnit.PdfExporterTest.executor": "Run",
+    "JUnit.StudentManagementAppTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -82,23 +89,13 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="studentmanagement.util" />
+      <recent name="studentmanagement.ui" />
+      <recent name="studentmanagement.pdf" />
       <recent name="studentmanagement.db" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseManagerTest">
-    <configuration name="StudentManagementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.studentmanagement.ui.StudentManagementApp" />
-      <module name="studentmanagement.ui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.studentmanagement.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ConstantsTest">
     <configuration name="studentmanagement.ui.StudentManagementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="studentmanagement.ui.StudentManagementApp" />
       <module name="studentmanagement.ui" />
@@ -108,6 +105,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstantsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="studentmanagement.util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="studentmanagement.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="studentmanagement.util" />
+      <option name="MAIN_CLASS_NAME" value="studentmanagement.util.ConstantsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,6 +139,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PdfExporterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="studentmanagement.pdf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="studentmanagement.pdf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="studentmanagement.pdf" />
+      <option name="MAIN_CLASS_NAME" value="studentmanagement.pdf.PdfExporterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentManagementAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="studentmanagement.ui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="studentmanagement.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="studentmanagement.ui" />
+      <option name="MAIN_CLASS_NAME" value="studentmanagement.ui.StudentManagementAppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="StudentManagementApp" />
       <option name="filePath" />
@@ -136,9 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConstantsTest" />
+        <item itemvalue="JUnit.StudentManagementAppTest" />
+        <item itemvalue="JUnit.PdfExporterTest" />
         <item itemvalue="JUnit.DatabaseManagerTest" />
         <item itemvalue="Application.studentmanagement.ui.StudentManagementApp" />
-        <item itemvalue="Application.StudentManagementApp" />
       </list>
     </recent_temporary>
   </component>
