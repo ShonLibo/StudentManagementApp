@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21b379c4-1b9f-498b-b46d-a63b04a64392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/studentmanagement.database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studentmanagement.db/src/test/java/studentmanagement/db/DatabaseManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.database.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentmanagement.db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.db/src/main/java/studentmanagement/db/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/src/main/java/studentmanagement/db/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.db/target/classes/com/studentmanagement/db/DatabaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.db/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/src/main/java/studentmanagement/pdf/PdfExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/src/main/java/studentmanagement/pdf/PdfExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.db/target/classes/studentmanagement/db/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/target/classes/studentmanagement/db/DatabaseManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentmanagement.util/src/main/java/studentmanagement/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/src/main/java/studentmanagement/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.util/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/target/classes/module-info.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentmanagement.util/target/classes/studentmanagement/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/target/classes/studentmanagement/util/Constants.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +27,7 @@
       <list>
         <option value="Class" />
         <option value="module-info" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -44,12 +40,12 @@
     &quot;assignee&quot;: &quot;SamsonNeyo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ShonLibo/StudentManagementApp.git&quot;,
-    &quot;accountId&quot;: &quot;0aa178af-251c-44bd-a18d-a51bcea63faf&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ShonLibo/StudentManagementApp.git",
+    "accountId": "480ba9e0-468e-41b9-b661-bf13704b994f"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -62,14 +58,19 @@
   "keyToString": {
     "Application.StudentManagementApp.executor": "Run",
     "Application.studentmanagement.ui.StudentManagementApp.executor": "Run",
+    "JUnit.DatabaseManagerTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/SamsonNeyo/mysql-connector-java-8.0.18.jar",
+    "last_opened_file_path": "C:/Users/DANGURU/mysql-connector-java-8.0.18.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.17094016",
+    "project.structure.side.proportion": "0.33563218",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -77,8 +78,14 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SamsonNeyo\Documents\GitHub\StudentManagementApp\StudentManagementApp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="studentmanagement.db" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.studentmanagement.ui.StudentManagementApp">
+  <component name="RunManager" selected="JUnit.DatabaseManagerTest">
     <configuration name="StudentManagementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.studentmanagement.ui.StudentManagementApp" />
       <module name="studentmanagement.ui" />
@@ -105,8 +112,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="StudentManagementApp" />
+    <configuration name="DatabaseManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="studentmanagement.db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="studentmanagement.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="studentmanagement.db" />
+      <option name="MAIN_CLASS_NAME" value="studentmanagement.db.DatabaseManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,6 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DatabaseManagerTest" />
         <item itemvalue="Application.studentmanagement.ui.StudentManagementApp" />
         <item itemvalue="Application.StudentManagementApp" />
       </list>
