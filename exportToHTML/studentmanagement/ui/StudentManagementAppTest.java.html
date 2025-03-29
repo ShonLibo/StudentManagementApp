@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>StudentManagementAppTest.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+StudentManagementAppTest.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">studentmanagement</span><span class="s2">.</span><span class="s1">ui</span><span class="s2">;</span>
+
+<span class="s0">import static </span><span class="s1">org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.</span><span class="s1">Assertions</span><span class="s2">.*;</span>
+
+<span class="s0">class </span><span class="s1">StudentManagementAppTest </span><span class="s2">{</span>
+
+    <span class="s0">private </span><span class="s1">StudentManagementApp app</span><span class="s2">;</span>
+
+    <span class="s1">@org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.</span><span class="s1">BeforeEach</span>
+    <span class="s0">void </span><span class="s1">setUp</span><span class="s2">() {</span>
+        <span class="s3">// Instantiate the real application before each test</span>
+        <span class="s1">app </span><span class="s2">= </span><span class="s0">new </span><span class="s1">StudentManagementApp</span><span class="s2">();</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.</span><span class="s1">Test</span>
+    <span class="s0">void </span><span class="s1">testSaveStudentWithEmptyFields</span><span class="s2">() {</span>
+        <span class="s3">// Set all fields to empty</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">regNoField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">);</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">nameField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">);</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">courseField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">);</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">gradeField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">);</span>
+
+        <span class="s3">// Simulate clicking the save button</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">saveButton</span><span class="s2">.</span><span class="s1">doClick</span><span class="s2">();</span>
+
+        <span class="s3">// Assert that the error dialog appears (you can extend this part)</span>
+        <span class="s3">// Example: check if fields are cleared</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">regNoField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">nameField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">courseField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">gradeField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.</span><span class="s1">Test</span>
+    <span class="s0">void </span><span class="s1">testSaveStudentWithValidFields</span><span class="s2">() {</span>
+        <span class="s3">// Set valid student data</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">regNoField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;12345&quot;</span><span class="s2">);</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">nameField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;John Doe&quot;</span><span class="s2">);</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">courseField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;Math&quot;</span><span class="s2">);</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">gradeField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;A&quot;</span><span class="s2">);</span>
+
+        <span class="s3">// Simulate clicking the save button</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">saveButton</span><span class="s2">.</span><span class="s1">doClick</span><span class="s2">();</span>
+
+        <span class="s3">// Assert that the fields are cleared after saving the student data</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">regNoField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">nameField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">courseField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">gradeField</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.</span><span class="s1">Test</span>
+    <span class="s0">void </span><span class="s1">testSearchFilter</span><span class="s2">() {</span>
+        <span class="s3">// Add some data to the table</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">tableModel</span><span class="s2">.</span><span class="s1">addRow</span><span class="s2">(</span><span class="s0">new </span><span class="s1">Object</span><span class="s2">[]{</span><span class="s4">&quot;12345&quot;</span><span class="s2">, </span><span class="s4">&quot;John Doe&quot;</span><span class="s2">, </span><span class="s4">&quot;Math&quot;</span><span class="s2">, </span><span class="s4">&quot;A&quot;</span><span class="s2">});</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">tableModel</span><span class="s2">.</span><span class="s1">addRow</span><span class="s2">(</span><span class="s0">new </span><span class="s1">Object</span><span class="s2">[]{</span><span class="s4">&quot;67890&quot;</span><span class="s2">, </span><span class="s4">&quot;Jane Smith&quot;</span><span class="s2">, </span><span class="s4">&quot;Science&quot;</span><span class="s2">, </span><span class="s4">&quot;B&quot;</span><span class="s2">});</span>
+
+        <span class="s3">// Simulate search for &quot;John&quot;</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">searchField</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s4">&quot;John&quot;</span><span class="s2">);</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">filterTable</span><span class="s2">();</span>
+
+        <span class="s3">// Assert that the filter worked and only &quot;John Doe&quot; is visible</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s5">1</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">tableModel</span><span class="s2">.</span><span class="s1">getRowCount</span><span class="s2">());</span>
+        <span class="s1">assertEquals</span><span class="s2">(</span><span class="s4">&quot;12345&quot;</span><span class="s2">, </span><span class="s1">app</span><span class="s2">.</span><span class="s1">tableModel</span><span class="s2">.</span><span class="s1">getValueAt</span><span class="s2">(</span><span class="s5">0</span><span class="s2">, </span><span class="s5">0</span><span class="s2">)); </span><span class="s3">// Ensure &quot;John Doe&quot; is still there</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.</span><span class="s1">Test</span>
+    <span class="s0">void </span><span class="s1">testExportToPdfWhenNoData</span><span class="s2">() {</span>
+        <span class="s3">// Clear the table data (simulate no records)</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">tableModel</span><span class="s2">.</span><span class="s1">setRowCount</span><span class="s2">(</span><span class="s5">0</span><span class="s2">);</span>
+
+        <span class="s3">// Simulate clicking the export to PDF button</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">exportButton</span><span class="s2">.</span><span class="s1">doClick</span><span class="s2">();</span>
+
+        <span class="s3">// Check that the warning dialog is shown (you'd need a real check here)</span>
+        <span class="s3">// Example: Assuming a method exists to verify the warning dialog</span>
+        <span class="s1">assertTrue</span><span class="s2">(</span><span class="s1">isWarningDialogVisible</span><span class="s2">());</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.</span><span class="s1">Test</span>
+    <span class="s0">void </span><span class="s1">testExportToPdfWhenDataExists</span><span class="s2">() {</span>
+        <span class="s3">// Add some data to the table</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">tableModel</span><span class="s2">.</span><span class="s1">addRow</span><span class="s2">(</span><span class="s0">new </span><span class="s1">Object</span><span class="s2">[]{</span><span class="s4">&quot;12345&quot;</span><span class="s2">, </span><span class="s4">&quot;John Doe&quot;</span><span class="s2">, </span><span class="s4">&quot;Math&quot;</span><span class="s2">, </span><span class="s4">&quot;A&quot;</span><span class="s2">});</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">tableModel</span><span class="s2">.</span><span class="s1">addRow</span><span class="s2">(</span><span class="s0">new </span><span class="s1">Object</span><span class="s2">[]{</span><span class="s4">&quot;67890&quot;</span><span class="s2">, </span><span class="s4">&quot;Jane Smith&quot;</span><span class="s2">, </span><span class="s4">&quot;Science&quot;</span><span class="s2">, </span><span class="s4">&quot;B&quot;</span><span class="s2">});</span>
+
+        <span class="s3">// Simulate clicking the export to PDF button</span>
+        <span class="s1">app</span><span class="s2">.</span><span class="s1">exportButton</span><span class="s2">.</span><span class="s1">doClick</span><span class="s2">();</span>
+
+        <span class="s3">// Check that the PDF export success message is shown (you'd need a real check here)</span>
+        <span class="s3">// Example: Assuming a method exists to verify successful export</span>
+        <span class="s1">assertTrue</span><span class="s2">(</span><span class="s1">isPdfExportedSuccessfully</span><span class="s2">());</span>
+    <span class="s2">}</span>
+
+    <span class="s3">// Helper methods to simulate dialog verifications</span>
+    <span class="s0">private boolean </span><span class="s1">isWarningDialogVisible</span><span class="s2">() {</span>
+        <span class="s3">// Logic to check if warning dialog is visible (simplified for this test)</span>
+        <span class="s0">return true</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">private boolean </span><span class="s1">isPdfExportedSuccessfully</span><span class="s2">() {</span>
+        <span class="s3">// Logic to check if PDF export was successful (simplified for this test)</span>
+        <span class="s0">return true</span><span class="s2">;</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

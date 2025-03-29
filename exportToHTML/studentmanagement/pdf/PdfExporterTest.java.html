@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>PdfExporterTest.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+PdfExporterTest.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">studentmanagement</span><span class="s2">.</span><span class="s1">pdf</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.*;</span>
+<span class="s0">import </span><span class="s1">studentmanagement</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Constants</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.*;</span>
+<span class="s0">import </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.</span><span class="s1">table</span><span class="s2">.</span><span class="s1">DefaultTableModel</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">io</span><span class="s2">.</span><span class="s1">File</span><span class="s2">;</span>
+
+<span class="s0">import static </span><span class="s1">org</span><span class="s2">.</span><span class="s1">junit</span><span class="s2">.</span><span class="s1">jupiter</span><span class="s2">.</span><span class="s1">api</span><span class="s2">.</span><span class="s1">Assertions</span><span class="s2">.*;</span>
+
+<span class="s0">class </span><span class="s1">PdfExporterTest </span><span class="s2">{</span>
+    <span class="s0">private </span><span class="s1">PdfExporter pdfExporter</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTable table</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JFrame dummyFrame</span><span class="s2">;</span>
+
+    <span class="s1">@BeforeEach</span>
+    <span class="s0">void </span><span class="s1">setUp</span><span class="s2">() {</span>
+        <span class="s1">pdfExporter </span><span class="s2">= </span><span class="s0">new </span><span class="s1">PdfExporter</span><span class="s2">();</span>
+        <span class="s1">dummyFrame </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JFrame</span><span class="s2">();</span>
+
+        <span class="s3">// Mock JTable with sample student data</span>
+        <span class="s1">String</span><span class="s2">[] </span><span class="s1">columns </span><span class="s2">= {</span><span class="s4">&quot;RegNo&quot;</span><span class="s2">, </span><span class="s4">&quot;Name&quot;</span><span class="s2">, </span><span class="s4">&quot;Course&quot;</span><span class="s2">, </span><span class="s4">&quot;Grade&quot;</span><span class="s2">};</span>
+        <span class="s1">Object</span><span class="s2">[][] </span><span class="s1">data </span><span class="s2">= {</span>
+                <span class="s2">{</span><span class="s4">&quot;2023-CS-001&quot;</span><span class="s2">, </span><span class="s4">&quot;John Doe&quot;</span><span class="s2">, </span><span class="s4">&quot;Computer Science&quot;</span><span class="s2">, </span><span class="s4">&quot;A&quot;</span><span class="s2">},</span>
+                <span class="s2">{</span><span class="s4">&quot;2023-CS-002&quot;</span><span class="s2">, </span><span class="s4">&quot;Jane Smith&quot;</span><span class="s2">, </span><span class="s4">&quot;Software Engineering&quot;</span><span class="s2">, </span><span class="s4">&quot;B+&quot;</span><span class="s2">}</span>
+        <span class="s2">};</span>
+        <span class="s1">table </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JTable</span><span class="s2">(</span><span class="s0">new </span><span class="s1">DefaultTableModel</span><span class="s2">(</span><span class="s1">data</span><span class="s2">, </span><span class="s1">columns</span><span class="s2">));</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@Test</span>
+    <span class="s0">void </span><span class="s1">testExportToPDF</span><span class="s2">() {</span>
+        <span class="s3">// AssertDoesNotThrow - Ensure exportToPDF does not throw exceptions</span>
+        <span class="s1">assertDoesNotThrow</span><span class="s2">(() </span><span class="s1">-&gt; pdfExporter</span><span class="s2">.</span><span class="s1">exportToPDF</span><span class="s2">(</span><span class="s1">table</span><span class="s2">, </span><span class="s1">dummyFrame</span><span class="s2">),</span>
+                <span class="s4">&quot;exportToPDF should execute without exceptions.&quot;</span><span class="s2">);</span>
+
+        <span class="s3">// Verify if the PDF file was created</span>
+        <span class="s1">File pdfFile </span><span class="s2">= </span><span class="s0">new </span><span class="s1">File</span><span class="s2">(</span><span class="s1">Constants</span><span class="s2">.</span><span class="s1">PDF_OUTPUT_PATH</span><span class="s2">);</span>
+        <span class="s1">assertTrue</span><span class="s2">(</span><span class="s1">pdfFile</span><span class="s2">.</span><span class="s1">exists</span><span class="s2">(), </span><span class="s4">&quot;The PDF file should be created after export.&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@Test</span>
+    <span class="s0">void </span><span class="s1">testInstanceOfPdfExporter</span><span class="s2">() {</span>
+        <span class="s3">// AssertInstanceOf - Verify the object type</span>
+        <span class="s1">assertInstanceOf</span><span class="s2">(</span><span class="s1">PdfExporter</span><span class="s2">.</span><span class="s0">class</span><span class="s2">, </span><span class="s1">pdfExporter</span><span class="s2">, </span><span class="s4">&quot;pdfExporter should be an instance of PdfExporter.&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

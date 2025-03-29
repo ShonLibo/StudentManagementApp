@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21b379c4-1b9f-498b-b46d-a63b04a64392" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/studentmanagement.pdf/src/test/java/studentmanagement/pdf/PdfExporterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentmanagement.ui/src/test/java/studentmanagement/ui/StudentManagementAppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentmanagement.util/src/test/java/studentmanagement/util/ConstantsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/target/classes/studentmanagement/ui/StudentManagementApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/target/classes/studentmanagement/ui/StudentManagementApp$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/target/classes/studentmanagement/ui/StudentManagementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/target/classes/studentmanagement/ui/StudentManagementApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.db/src/test/java/studentmanagement/db/DatabaseManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/src/test/java/studentmanagement/db/DatabaseManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.db/target/test-classes/studentmanagement/db/DatabaseManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/target/test-classes/studentmanagement/db/DatabaseManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/student_records.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/student_records.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/src/test/java/studentmanagement/ui/StudentManagementAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/src/test/java/studentmanagement/ui/StudentManagementAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/target/test-classes/studentmanagement/ui/StudentManagementAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/target/test-classes/studentmanagement/ui/StudentManagementAppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,12 +39,12 @@
     &quot;assignee&quot;: &quot;SamsonNeyo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ShonLibo/StudentManagementApp.git",
-    "accountId": "480ba9e0-468e-41b9-b661-bf13704b994f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ShonLibo/StudentManagementApp.git&quot;,
+    &quot;accountId&quot;: &quot;480ba9e0-468e-41b9-b661-bf13704b994f&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/studentmanagement.pdf/pom.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java" root0="SKIP_INSPECTION" />
@@ -64,8 +63,11 @@
     "Application.studentmanagement.ui.StudentManagementApp.executor": "Run",
     "JUnit.ConstantsTest.executor": "Run",
     "JUnit.DatabaseManagerTest.executor": "Run",
+    "JUnit.DatabaseManagerTest.loadData.executor": "Run",
+    "JUnit.DatabaseManagerTest.saveStudent.executor": "Run",
     "JUnit.PdfExporterTest.executor": "Run",
     "JUnit.StudentManagementAppTest.executor": "Run",
+    "JUnit.StudentManagementAppTest.testSearchFilter.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -89,14 +91,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="studentmanagement.util" />
       <recent name="studentmanagement.ui" />
+      <recent name="studentmanagement.util" />
       <recent name="studentmanagement.pdf" />
       <recent name="studentmanagement.db" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConstantsTest">
-    <configuration name="studentmanagement.ui.StudentManagementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StudentManagementAppTest">
+    <configuration name="StudentManagementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="studentmanagement.ui.StudentManagementApp" />
       <module name="studentmanagement.ui" />
       <extension name="coverage">
@@ -105,21 +107,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConstantsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="studentmanagement.util" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="studentmanagement.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="studentmanagement.util" />
-      <option name="MAIN_CLASS_NAME" value="studentmanagement.util.ConstantsTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,6 +156,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentManagementAppTest.testSearchFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="studentmanagement.ui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="studentmanagement.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="studentmanagement.ui" />
+      <option name="MAIN_CLASS_NAME" value="studentmanagement.ui.StudentManagementAppTest" />
+      <option name="METHOD_NAME" value="testSearchFilter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="StudentManagementApp" />
       <option name="filePath" />
@@ -178,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConstantsTest" />
         <item itemvalue="JUnit.StudentManagementAppTest" />
+        <item itemvalue="Application.StudentManagementApp" />
+        <item itemvalue="JUnit.StudentManagementAppTest.testSearchFilter" />
         <item itemvalue="JUnit.PdfExporterTest" />
         <item itemvalue="JUnit.DatabaseManagerTest" />
-        <item itemvalue="Application.studentmanagement.ui.StudentManagementApp" />
       </list>
     </recent_temporary>
   </component>
@@ -196,5 +199,21 @@
       <updated>1742929485125</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/studentmanagement.db/src/test/java/studentmanagement/db/DatabaseManagerTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

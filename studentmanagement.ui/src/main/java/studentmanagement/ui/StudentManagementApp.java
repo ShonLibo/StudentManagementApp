@@ -30,7 +30,7 @@ public class StudentManagementApp extends JFrame {
     JTextField courseField;
     JTextField gradeField;
     JTextField searchField;
-    private JTable studentTable;
+    JTable studentTable;
     DefaultTableModel tableModel;
     JButton saveButton;
     private JButton viewButton;
