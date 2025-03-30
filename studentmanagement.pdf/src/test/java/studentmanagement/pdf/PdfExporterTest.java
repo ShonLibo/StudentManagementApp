@@ -6,42 +6,47 @@ import studentmanagement.util.Constants;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.io.File;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class PdfExporterTest {
     private PdfExporter pdfExporter;
     private JTable table;
-    private JFrame dummyFrame;
+    private JFrame parent;
+    private static final String TEST_PDF_PATH = "test_output.pdf";
 
     @BeforeEach
     void setUp() {
         pdfExporter = new PdfExporter();
-        dummyFrame = new JFrame();
+        parent = new JFrame();
 
-        // Mock JTable with sample student data
-        String[] columns = {"RegNo", "Name", "Course", "Grade"};
+        // Create a JTable with sample data
+        String[] columns = {"ID", "Name", "Grade"};
         Object[][] data = {
-                {"2023-CS-001", "John Doe", "Computer Science", "A"},
-                {"2023-CS-002", "Jane Smith", "Software Engineering", "B+"}
+                {"1", "Alice", "A"},
+                {"2", "Bob", "B"}
         };
         table = new JTable(new DefaultTableModel(data, columns));
     }
 
     @Test
-    void testExportToPDF() {
-        // AssertDoesNotThrow - Ensure exportToPDF does not throw exceptions
-        assertDoesNotThrow(() -> pdfExporter.exportToPDF(table, dummyFrame),
-                "exportToPDF should execute without exceptions.");
+    void exportToPDF_createsFileSuccessfully() {
+        File file = new File(TEST_PDF_PATH);
 
-        // Verify if the PDF file was created
-        File pdfFile = new File(Constants.PDF_OUTPUT_PATH);
-        assertTrue(pdfFile.exists(), "The PDF file should be created after export.");
-    }
+        // Ensure file doesn't exist before test
+        if (file.exists()) {
+            file.delete();
+        }
 
-    @Test
-    void testInstanceOfPdfExporter() {
-        // AssertInstanceOf - Verify the object type
-        assertInstanceOf(PdfExporter.class, pdfExporter, "pdfExporter should be an instance of PdfExporter.");
+        // Set a temporary output path
+        Constants.PDF_OUTPUT_PATH = TEST_PDF_PATH;
+
+        assertDoesNotThrow(() -> pdfExporter.exportToPDF(table, parent),
+                "Exporting PDF should not throw an exception.");
+
+        // Verify file was created
+        assertTrue(file.exists(), "PDF file should be created successfully.");
+
+        // Cleanup
+        file.delete();
     }
 }

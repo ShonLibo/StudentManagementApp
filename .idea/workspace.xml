@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="21b379c4-1b9f-498b-b46d-a63b04a64392" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.db/src/test/java/studentmanagement/db/DatabaseManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/src/test/java/studentmanagement/db/DatabaseManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.db/target/test-classes/studentmanagement/db/DatabaseManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.db/target/test-classes/studentmanagement/db/DatabaseManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/src/test/java/studentmanagement/pdf/PdfExporterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/src/test/java/studentmanagement/pdf/PdfExporterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/student_records.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/student_records.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/src/test/java/studentmanagement/ui/StudentManagementAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/src/test/java/studentmanagement/ui/StudentManagementAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentmanagement.ui/target/test-classes/studentmanagement/ui/StudentManagementAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.ui/target/test-classes/studentmanagement/ui/StudentManagementAppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.pdf/target/test-classes/studentmanagement/pdf/PdfExporterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.pdf/target/test-classes/studentmanagement/pdf/PdfExporterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentmanagement.util/src/main/java/studentmanagement/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/studentmanagement.util/src/main/java/studentmanagement/util/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,32 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.StudentManagementApp.executor": "Run",
-    "Application.studentmanagement.ui.StudentManagementApp.executor": "Run",
-    "JUnit.ConstantsTest.executor": "Run",
-    "JUnit.DatabaseManagerTest.executor": "Run",
-    "JUnit.DatabaseManagerTest.loadData.executor": "Run",
-    "JUnit.DatabaseManagerTest.saveStudent.executor": "Run",
-    "JUnit.PdfExporterTest.executor": "Run",
-    "JUnit.StudentManagementAppTest.executor": "Run",
-    "JUnit.StudentManagementAppTest.testSearchFilter.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/DANGURU/mysql-connector-java-8.0.18.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.33563218",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.StudentManagementApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.studentmanagement.ui.StudentManagementApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ConstantsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DatabaseManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DatabaseManagerTest.loadData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DatabaseManagerTest.saveStudent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PdfExporterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentManagementAppTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentManagementAppTest.testSearchFilter.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DANGURU/mysql-connector-java-8.0.18.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33563218&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SamsonNeyo\Documents\GitHub\StudentManagementApp\StudentManagementApp" />
@@ -91,13 +91,13 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="studentmanagement.pdf" />
       <recent name="studentmanagement.ui" />
       <recent name="studentmanagement.util" />
-      <recent name="studentmanagement.pdf" />
       <recent name="studentmanagement.db" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentManagementAppTest">
+  <component name="RunManager" selected="JUnit.DatabaseManagerTest">
     <configuration name="StudentManagementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="studentmanagement.ui.StudentManagementApp" />
       <module name="studentmanagement.ui" />
@@ -107,6 +107,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstantsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="studentmanagement.util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="studentmanagement.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="studentmanagement.util" />
+      <option name="MAIN_CLASS_NAME" value="studentmanagement.util.ConstantsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,22 +171,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentManagementAppTest.testSearchFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="studentmanagement.ui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="studentmanagement.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="studentmanagement.ui" />
-      <option name="MAIN_CLASS_NAME" value="studentmanagement.ui.StudentManagementAppTest" />
-      <option name="METHOD_NAME" value="testSearchFilter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="StudentManagementApp" />
       <option name="filePath" />
@@ -181,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentManagementAppTest" />
-        <item itemvalue="Application.StudentManagementApp" />
-        <item itemvalue="JUnit.StudentManagementAppTest.testSearchFilter" />
-        <item itemvalue="JUnit.PdfExporterTest" />
         <item itemvalue="JUnit.DatabaseManagerTest" />
+        <item itemvalue="JUnit.StudentManagementAppTest" />
+        <item itemvalue="JUnit.ConstantsTest" />
+        <item itemvalue="JUnit.PdfExporterTest" />
+        <item itemvalue="Application.StudentManagementApp" />
       </list>
     </recent_temporary>
   </component>
@@ -204,14 +203,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/studentmanagement.ui/src/main/java/studentmanagement/ui/StudentManagementApp.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/studentmanagement.db/src/test/java/studentmanagement/db/DatabaseManagerTest.java</url>
           <line>13</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/studentmanagement.pdf/src/test/java/studentmanagement/pdf/PdfExporterTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
